@@ -1,0 +1,69 @@
+// Обнуляем стили.
+@import "../css/nullStyle";  
+
+// Подключаем шрифты.
+@import "../fonts/Roboto/Roboto";
+
+// Подключаем стили всей страницы.
+@import "global_blocks.scss";
+@import "header.scss";
+@import "menu-burger.scss";
+@import "main.scss";
+@import "footer.scss";
+
+body {
+    background: #EFEFEF;
+    font-family: 'Roboto';
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+section, nav {
+    padding: 0 100px;
+    margin: 0px auto;
+}
+
+@media (max-width: 1024px) {
+    .special-offers {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .attractions-list {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    section, nav {
+        padding: 0 50px;
+    }
+    .special-offers {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .attractions-list {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 394px) {
+    section, nav {
+        padding: 0 20px;
+    }
+    .special-offers {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .attractions-list {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+

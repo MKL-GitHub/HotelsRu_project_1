@@ -1,0 +1,93 @@
+.special-offers {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 16px;
+
+        & span {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+        & img {
+            padding-right: 45px;
+        }
+    }
+    
+    & .armchair-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        
+        & .armchair-item{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: #FFFFFF;
+            padding: 25px;
+            flex: 1 1 100%;
+            height: auto;
+
+            &__description {
+                text-align: center;
+                margin-top: -3px;
+                margin-bottom: -3px;
+                max-width: 195px;
+                font-size: 14px;
+                line-height: 20px;
+                color: #333333;
+            }
+            &__price{
+                font-weight: 500;
+                font-size: 21px;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
+            & a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 130px;
+                min-height: 35px;
+                background: #66C05D;
+                border-radius: 30px;
+                font-size: 14px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .special-offers {
+        & .armchair-list{
+            flex-wrap: wrap;
+            gap: 20px;
+            
+            & .armchair-item{
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .special-offers {
+        &__title{
+            & span {
+                font-size: 16px;
+            }
+            & img {
+                padding-right: 0px;
+                max-width: 100px;
+            }
+        }
+    }
+}
