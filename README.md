@@ -1,7 +1,7 @@
 <h1 align="center">Макет сайта BEAUTY</h1>
 
 <h2 align="center">Desktop</h2>
-<img src="https://user-images.githubusercontent.com/93647476/221926059-e7b928a1-73ea-46bd-b32f-b031f1f9ff5c.png">
+<img src="https://github.com/MKL-GitHub/HotelsRu_project_1/assets/93647476/f53308e2-3d46-4f8d-92d3-92fbfcdf695e">
 
 <h2 align="center">Phone</h2>
 <div align="center">
